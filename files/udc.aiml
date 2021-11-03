@@ -30,104 +30,38 @@
   </category>
   
   <category>
-    <pattern>Czy *</pattern>
-    <template>Sadze, ze <srai><star/></srai></template>
- </category>
- 
- <category>
-    <pattern>Mozna * ?</pattern>
-    <template>Mozna, gdyby bylo inaczej, Bog by inaczej swiat stworzyl</template>
- </category>
- 
- <category>
-<pattern>kon</pattern>
-<template>Interesujesz sie jezdziectwem ?</template>
-</category>
-<category>
-<pattern>_ kon</pattern>
-<template><srai>kon</srai></template>
-</category>
-<category>
-<pattern>kon _</pattern>
-<template><srai>kon</srai></template>
-</category>
-<category>
-<pattern>_ kon *</pattern>
-<template><srai>kon</srai></template>
-</category>
-
-<category>
-<pattern>Lubie zwierzeta</pattern>
-<template>Jakie najbardziej ?</template>
-</category>
-<category>
-<pattern>Lubie zwierzeta</pattern>
-<that>Dlaczego nie lubisz zwierzat</that>
-<template>Jestes niezdecydowany...</template>
-</category>
-<category>
-<pattern>Nie lubie zwierzat</pattern>
-<template>Dlaczego nie lubisz zwierzat?</template>
-</category>
-
-<category>
-<pattern>Jestem *</pattern>
-<template>Milo cie poznac <set name="imie"><star/></set></template>
-</category>
-
-<category>
-<pattern>Kim jestem</pattern>
-<template>Jestes <get name="imie"/></template>!
-</category>
-
-<topic name="ZWIERZAKI">
+    <pattern>Siema</pattern>
+    <template><srai>Czesc</srai></template>
+  </category>
+  
+  <topic name="ZWIERZAKI">
+    <category>
+    <pattern>Zwierzeta *</pattern>
+    <template>
+    <random>
+    <li>Boisz sie dzikich zwierzat ?</li>
+    <li>Jakiego zwierzecia najbardziej nie lubisz ?</li>
+    <li>Jakie zwierze najbardziej lubisz ?</li>
+    </random>
+    </template>
+    </category>
+    <category>
+    <pattern>*</pattern>
+    <template>Jaki to ma zwiazek ze zwierzetami ?</template>
+    </category>
+    <category>
+    <pattern>Nie mam ochoty na ten temat rozmawiac</pattern>
+    <template><think><set name="topic">*</set></think>W porzadku, nie rozmawiajmy o zwierzetach</template>
+    </category>
+    </topic>
 <category>
 <pattern>Zwierzeta *</pattern>
-<template>
-<random>
-<li>Boisz sie dzikich zwierzat ?</li>
-<li>Jakiego zwierzecia najbardziej nie lubisz ?</li>
-<li>Jakie zwierze najbardziej lubisz ?</li>
-</random>
-</template>
+<template>Zwierzeta to istoty zywe</template>
 </category>
 <category>
-<pattern>*</pattern>
-<template>Jaki to ma zwiazek ze zwierzetami ?</template>
+<pattern>Interesujesz sie zwierzetami</pattern>
+<template><think><set name="topic">ZWIERZAKI</set></think>Owszem, chetnie o nich porozmawiam</template>
 </category>
-<category>
-<pattern>Nie mam ochoty na ten temat rozmawiac</pattern>
-<template><think><set name="topic">*</set></think>W porzadku, nie rozmawiajmy o zwierzetach</template>
-</category>
-</topic>
-
-
-<category>
-<pattern>*</pattern>
-<template>
-Naprawde tak myslisz ?
-<think><set name="topic">WKOLO</set></think>
-</template>
-</category>
-<topic name="WKOLO">
-<category>
-<pattern>*</pattern>
-<template>
-<think><set name="var"><star /></set></think>
-<condition>
-<li name="var" value="tak">
-Przyznajesz sie.
-<think><set name="topic">*</set></think>
-</li>
-<li name="var" value="nie">
-Wypierasz sie.
-<think><set name="topic">*</set></think>
-</li>
-<li>Tak czy nie ?</li>
-</condition>
-</template>
-</category>
-</topic>
 
   
 </aiml>
