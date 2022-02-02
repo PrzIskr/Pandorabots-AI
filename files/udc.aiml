@@ -993,7 +993,8 @@
 
 
     <category>
-        <pattern>Napoje gazowane *</pattern>
+        <pattern>Napoje *</pattern>
         <template>Napoje gazowane są bardzo orzeźwiające!</template>
+        <think><set name="topic">NAPOJE</set></think>
     </category>
 </aiml>
