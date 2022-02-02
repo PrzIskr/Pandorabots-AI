@@ -58,7 +58,7 @@
         </template>
     </category>
     
-    
+
 
     <category>
         <pattern>Hej</pattern>
@@ -352,12 +352,12 @@
 
 
         <category>
-            <pattern>tak, interesuję się napojami</pattern>
+            <pattern>Tak, interesuję się napojami</pattern>
             <template><think><set name="topic">NAPOJE</set></think>Super! Zacznijmy więc rozmowę!</template>
         </category>
         
         <category>
-            <pattern>nie kręci mnie ten temat, porozmawiajmy o czymś innym</pattern>
+            <pattern>Nie kręci mnie ten temat, porozmawiajmy o czymś innym</pattern>
             <template><think><set name="topic">*</set></think>Szkoda. Mama nadzieję, że innym razem poruszymy ten temat.</template>
         </category>
         
@@ -980,7 +980,7 @@
         
         <category>
             <pattern>puszka _</pattern>
-            <template><srai>pilot</srai></template>
+            <template><srai>puszka</srai></template>
         </category>
         
         <category>
