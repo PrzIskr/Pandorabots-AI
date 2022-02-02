@@ -1,67 +1,999 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template><random>
-        <li>nie wiem, o czym mowisz</li>
-        <li>mozesz powtorzyc?</li>
-        <li>jeden rabin powie tak, inny powie nie</li>
-    </random></template>
-  </category>
-  
-  <category>
-    <pattern>Czesc</pattern>
-    <template>Witaj</template>
-  </category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>Nie rozumiem</li>
+                <li>Co masz na myśli?</li>
+                <li>W czym mogę Ci pomóc?</li>
+                <li>Rozmyślam o tym co myślisz...</li>
+                <li>Nie rozumiem</li>
+                <li>Nie kapuję</li>
+                <li>Nie kumam</li>
+                <li>Nie ogarniam</li>
+                <li>Przepraszam, nie zrozumiałem Cię</li>
+                <li>Mógłbyś powtórzyć to innymi słowami?</li>
+                <li>Mógłbyś doprecyzować?</li>
+                <li>Nie mogę załapać</li>
+                <li>Nie mogę zrozumieć</li>
+                <li>Nie wiem, o co Ci może chodzić</li>
+                <li>Nie pojmuję</li>
+                <li>Nie wiem, co Ci odpowiedzieć, bo nie rozumiem</li>
+                <li>Nie orientuję się</li>
+                <li>Nie potrafię się wypowiedzieć na ten temat</li>
+                <li>To jest poza obszarem moich zainteresowań</li>
+                <li>To wykracza poza mój zakres wiedzy</li>
+                <li>Nie wiem o czym mówisz</li>
+            </random>
+        </template>
+    </category>
+    
 
-  <category>
-    <pattern>Dzien dobry</pattern>
-    <template><srai>Czesc</srai></template>
-  </category>
-  
-  <category>
-    <pattern>Witaj</pattern>
-    <template><srai>Czesc</srai></template>
-  </category>
-  
-  <category>
-    <pattern>Dobry wieczor</pattern>
-    <template><srai>Czesc</srai></template>
-  </category>
-  
-  <category>
-    <pattern>Siema</pattern>
-    <template><srai>Czesc</srai></template>
-  </category>
-  
-  <topic name="ZWIERZAKI">
+    
     <category>
-    <pattern>Zwierzeta *</pattern>
-    <template>
-    <random>
-    <li>Boisz sie dzikich zwierzat ?</li>
-    <li>Jakiego zwierzecia najbardziej nie lubisz ?</li>
-    <li>Jakie zwierze najbardziej lubisz ?</li>
-    </random>
-    </template>
+        <pattern>Cześć</pattern>
+        <template>
+            <random>
+                <li>Hej</li>
+                <li>Hejka</li>
+                <li>Siema</li>
+                <li>Siemka</li>
+                <li>Cześć</li>
+                <li>Dzień dobry</li>
+                <li>Dobry wieczór</li>
+                <li>Witam</li>
+                <li>Witaj</li>
+                <li>Serwus</li>
+                <li>Elo</li>
+                <li>Czołem</li>
+                <li>Ciao</li>
+                <li>Salut</li>
+                <li>Buon giorno</li>
+                <li>Bonjour</li>
+                <li>Hola</li>
+                <li>Hi</li>
+                <li>Hello</li>
+            </random>
+        </template>
     </category>
+    
+    
+
     <category>
-    <pattern>*</pattern>
-    <template>Jaki to ma zwiazek ze zwierzetami ?</template>
+        <pattern>Hej</pattern>
+        <template><srai>Cześć</srai></template>
     </category>
+    
     <category>
-    <pattern>Nie mam ochoty na ten temat rozmawiac</pattern>
-    <template><think><set name="topic">*</set></think>W porzadku, nie rozmawiajmy o zwierzetach</template>
+        <pattern>Hej *</pattern>
+        <template><srai>Cześć</srai></template>
     </category>
+
+    <category>
+        <pattern>Hejka</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hejka *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Siema</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Siema *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Siemka</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Siemka *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+<!--
+    <category>
+        <pattern>Cześć</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+-->
+    
+    <category>
+        <pattern>Cześć *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Dzień dobry</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Dzień dobry *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Dobry wieczór</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Dobry wieczór *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Witam</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Witam *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Witaj</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Witaj *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Serwus</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Serwus *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Elo</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Elo *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Czołem</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Czołem *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Ciao</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Ciao *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Salut</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Salut *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Buon giorno</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Buon giorno *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Bonjour</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Bonjour *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hola</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hola *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hi</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hi *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hello</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hello *</pattern>
+        <template><srai>Cześć</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Mam na imię *</pattern>
+        <template><srai>Cześć</srai> <set name="imie"><star/></set></template>
+    </category>
+  
+    <category>
+        <pattern>Jak mam na imię _</pattern>
+        <template>Nazywasz się <get name="imie" /></template>!
+    </category>
+  
+    <category>
+        <pattern>Lubię napoje gazowane</pattern>
+        <template>
+            Czy interesujesz się napojami gazowanymi?
+        </template>
+    </category>
+ 
+
+
+    <topic name="NAPOJE">
+        <category>
+            <pattern>Napoje *</pattern>
+            <template>
+                <random>
+                    <li>Dlaczego lubisz napoje gazowane?</li>
+                    <li>Czy często pijasz napoje gazowane?</li>
+                    <li>Jakie napoje gazowane lubisz najbardziej?</li>
+                    <li>Czy masz jakichś ulubionych producentów napojów gazowanych?</li>
+                    <li>Czy zwracasz uwagę na wartości odżywcze napojów gazowanych?</li>
+                    <li>jaki jest Twój ulubiony napój gazowany?</li>
+                    <li>Skąd się u Ciebie wzięło zainteresowanei napojami gazowanymi?</li>
+                </random>
+            </template>
+        </category>
+        
+
+
+        <category>
+            <pattern>Odpowiedz</pattern>
+            <template>
+                <random>
+                    <li>Jestem pewny, że </li>
+                    <li>Odpowiedź to: </li>
+                    <li>Odpowiedzią na Twoje pytanie jest </li>
+                    <li>Odpowiedź na Twoje pytanie brzmi: </li>
+                    <li>Oto odpowiedź: </li>
+                </random>
+            </template>
+        </category>
+        
+
+
+        <category>
+            <pattern>Potwierdzenie</pattern>
+            <template>
+                <random>
+                    <li>Tak</li>
+                    <li>Tak jest</li>
+                    <li>Zgadza się</li>
+                    <li>Oczywiście</li>
+                    <li>Oczywiście,że tak</li>
+                    <li>Nie ma co do tego wątpliwości</li>
+                    <li>Z całą pewnością</li>
+                    <li>Bezspornie</li>
+                    <li>Bezsprzecznie</li>
+                    <li>Dokładnie</li>
+                    <li>Na mur beton</li>
+                    <li>Jak najbardziej</li>
+                    <li>Prawda</li>
+                    <li>Owszem</li>
+                    <li>W istocie, tak</li>
+                    <li>Jasne!</li>
+                </random>
+            </template>
+        </category>
+        
+
+
+        <category>
+            <pattern>Negacja</pattern>
+            <template>
+                <random>
+                    <li>Nie</li>
+                    <li>Niestety nie</li>
+                    <li>Absolutnie nie</li>
+                    <li>Nie ma mowy</li>
+                    <li>Ani trochę</li>
+                    <li>Nigdy w życiu</li>
+                    <li>Za żadne skarby</li>
+                    <li>Gdzie tam</li>
+                    <li>Nope.</li>
+                    <li>Nie mogę na to przytaknąć</li>
+                    <li>To nie jest prawda</li>
+                </random>
+            </template>
+        </category>
+
+
+
+        <category>
+            <pattern>tak, interesuję się napojami</pattern>
+            <template><think><set name="topic">NAPOJE</set></think>Super! Zacznijmy więc rozmowę!</template>
+        </category>
+        
+        <category>
+            <pattern>nie kręci mnie ten temat, porozmawiajmy o czymś innym</pattern>
+            <template><think><set name="topic">*</set></think>Szkoda. Mama nadzieję, że innym razem poruszymy ten temat.</template>
+        </category>
+        
+
+
+        <category>
+            <pattern>7 Up jest napojem produkowanym przez PepsiCo</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Moiuntain Dew jest napojem produkowanym przez PepsiCo</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Mirinda jest napojem produkowanym przez PepsiCo</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Rockstar napojem produkowanym przez PepsiCo</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Schweppes napojem produkowanym przez PepsiCo</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Rockstar jest napojem energetyzującym</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+        <category>
+            <pattern>Red Bull jest napojem energetyzującym</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Fanta jest napojem produkowanym przez Coca-Colę</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Sprite jest napojem produkowanym przez Coca-Colę</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Kinley Tonic jest napojem produkowanym przez Coca-Colę</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Napoje typu tonic zawierają chininę</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Hoop Cola to polski napój</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Polo Cokta to polska cola produkowana jeszcze w PRL</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Polo Cockta była produkowana przez Zbyszko</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>3 Owoce to seria napojów produkowanych przez Zbyszko</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Kofola to cola produkowana w Czechach</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Monster to napój energetyzujacy</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+        
+        <category>
+            <pattern>Burn to napój energetyzujący produkowany przez Monster Beverage</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+        <category>
+            <pattern>Tauryna jest częstym składnikiem napojów energetyzujacych</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+        <category>
+            <pattern>Kofeina jest składnikiem pobudzającym w napojach energetyzujacych</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+        <category>
+            <pattern>Aspartam jest słodzikiem</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+        <category>
+            <pattern>Stewia jest wykorzystywana jako naturalny słodzik</pattern>
+            <template><srai>Potwierdzenie</srai></template>
+        </category>
+
+
+
+        <category>
+            <pattern>Dr Pepper jest produkowany przez PepsiCo</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>3 Cytryny to napój typu cola</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Cola to napój zawierający chininę</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Hoop Cola to czeska marka</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Pepsi Cola powstała wcześniej niż Coca Cola</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Aspartam jest rośliną wykorzystywanja jako słodzik</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Tonic został wynaleziony w USA</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Fanta jest produkowana przez PepsiCo</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>Sprite jest produkowany przez Pepsico</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        <category>
+            <pattern>7 Up jest produkowany przez Coca Colę</pattern>
+            <template><srai>Negacja</srai></template>
+        </category>
+
+        
+        
+        <category>
+            <pattern>Czy *</pattern>
+            <template><srai>Odpowiedz</srai><srai><star/></srai></template>
+        </category>
+        
+
+
+        <category>
+            <pattern>Tonic</pattern>
+            <template>bezalkoholowy napój gazowany, w skład którego wchodzi woda sodowa, chinina oraz soki owocowe. Posiada on charakterystyczny, gorzkawy smak.</template>
+        </category>
+
+        <category>
+            <pattern>Cola</pattern>
+            <template>słodki napój gazowany, początkowo wytwarzany z soku z owoców drzewa koli i krzewu koki, zmieszanych z wodą sodową.</template>
+        </category>
+
+        <category>
+            <pattern>Coca Cola</pattern>
+            <template>marka napoju gazowanego przedsiębiorstwa The Coca-Cola Company. Powstała pod koniec XIX wieku i jest obecnie jedną z najpopularniejszych marek na świecie. Od 1960 roku charakterystyczny kształt butelki jest także prawnie zastrzeżony. Coca-cola jest jedną z ikon kultury masowej XX wieku, jak również jednym z symboli Stanów Zjednoczonych.</template>
+        </category>
+
+        <category>
+            <pattern>Dr Pepper</pattern>
+            <template>Napój bezalkoholowy, gazowany, typu cola. Powstał w 1885 r., był sprzedawany przez amerykańskie przedsiębiorstwo Cadbury Schweppes Americas Beverages. Po raz pierwszy sprzedany lokalnie w Waco w stanie Teksas 1 grudnia 1885 r. Twórcą receptury jest farmaceuta z Waco pochodzenia niemieckiego Charles Alderton.</template>
+        </category>
+
+        <category>
+            <pattern>Pepsi</pattern>
+            <template>marka napojów gazowanych typu cola należąca do PepsiCo. Największym z jej konkurentów jest Coca-Cola.</template>
+        </category>
+
+        <category>
+            <pattern>Hoop Cola</pattern>
+            <template>napój bezalkoholowy typu cola produkowany przez firmę ZMB Capital sp. z o.o., właściciela firmy Ustronianka, (wcześniej: Kofola S.A. i Hoop S.A.).</template>
+        </category>
+
+        <category>
+            <pattern>Kofola</pattern>
+            <template>bezalkoholowy napój gazowany typu cola produkowany w Czechach i na Słowacji. Powstał w roku 1960 w Czechosłowacji, gdzie zdobył największą popularność. Właścicielem znaku towarowego Kofola jest spółka Kofola Československo z siedzibą w Karniowie. Kofola nadal jest głównym konkurentem Coca-Coli oraz Pepsi w Czechach i na Słowacji i jeden z czołowych producentów i dystrybutorów napojów bezalkoholowych w Europie Środkowej i Wschodnie</template>
+        </category>
+
+        <category>
+            <pattern>Polo Cockta</pattern>
+            <template>napój bezalkoholowy produkowany w Polsce od lat 60. do początku lat 90. XX wieku przez wytwórnie wód gazowanych (WWG) należące do spółdzielni Społem. Napój miał być konkurencją dla napoju Coca-Cola</template>
+        </category>
+
+        <category>
+            <pattern>Fanta</pattern>
+            <template>napój gazowany o smaku owocowym produkowany przez The Coca-Cola Company. Fanta została stworzona w 1940 roku przez Maxa Keitha, szefa niemieckiego oddziału Coca-Coli, gdy w konsekwencji II Wojny Światowej oraz embargo, do Niemiec nie było możliwe dostarczenie głównych składników do produkcji Coca-Coli z USA. Postanowił wtedy stworzyć nowy napój ze składników dostępnych w Niemczech. Po wojnie amerykański oddział postanowił utrzymać produkcję Fanty i zaczął ją promować jako jeden ze swoich sztandarowych produktów. Obecnie na całym świecie Fanta dostępna jest w ponad 100 smakach! Nazwa Fanta wzięła się od niemieckiego słowa "fantasie" co oznacza wyobraźnia. Wpadli na nią po krótkiej naradzie kiedy Max Keith zachęcał swoich kolegów właśnie do użycia wyobraźni przy wymyślaniu nazwy. </template>
+        </category>
+
+        <category>
+            <pattern>Sprite</pattern>
+            <template>marka napoju gazowanego o smaku cytrynowo-limonkowym należąca do The Coca-Cola Company. Napój Sprite został wprowadzony na rynek w USA w 1961 roku, w Polsce od 1991 roku.</template>
+        </category>
+
+        <category>
+            <pattern>Kinley Tonic</pattern>
+            <template>napój bezalkoholowy produkowany przez The Coca-Cola Company</template>
+        </category>
+
+        <category>
+            <pattern>7 Up</pattern>
+            <template>napój gazowany o smaku cytrynowo-limonkowym w Europie produkowany przez oddziały PepsiCo, a w USA przez Dr Pepper Snapple Group</template>
+        </category>
+
+        <category>
+            <pattern>Mountain Dew</pattern>
+            <template>napój bezalkoholowy o smaku cytrusowym produkowany przez PepsiCo. Został wynaleziony w Marion (Wirginia) w 1948 roku. Wtedy także został po raz pierwszy sprzedany (w Knoxville w stanie Tennessee)</template>
+        </category>
+
+        <category>
+            <pattern>Schweppes</pattern>
+            <template>marka napojów gazowanych, która pojawiła się w 1783 roku, gdy niemiecki zegarmistrz i jubiler Johann Jacob Schweppe opracował metodę nasycania napojów dwutlenkiem węgla. Właścicielem marki jest Dr Pepper Snapple Group</template>
+        </category>
+
+        <category>
+            <pattern>Napój energetyzujący</pattern>
+            <template>pobudzający, przeważnie gazowany napój bezalkoholowy, z reguły zawierający kofeinę, taurynę i guaranę (źródło kofeiny). Bywa mylony z napojami izotonicznymi, które mają inne działanie</template>
+        </category>
+
+        <category>
+            <pattern>Caleb Bradham</pattern>
+            <template>amerykański farmaceuta, twórca Pepsi-Coli</template>
+        </category>
+
+        <category>
+            <pattern>John S. Pemberton</pattern>
+            <template>amerykański farmaceuta, twórca receptury Coca-Coli</template>
+        </category>
+
+        <category>
+            <pattern>Johann Jacob Schweppe</pattern>
+            <template>niemiecki jubiler i zegarmistrz. W 1783 roku opatentował metodę nasycania wody mineralnej dwutlenkiem węgla. Opracował ją w oparciu o odkrycia Josepha Priestleya (1733-1804). Stał się znany jako producent wody sodowej, którą podbił rynek Anglii.</template>
+        </category>
+
+        <category>
+            <pattern>Syfon</pattern>
+            <template> grubościenna butla (zwykle szklana) do napojów gazowanych (zwłaszcza popularnej kiedyś wody sodowej), posiadająca urządzenie zamykające, po którego otwarciu ciśnienie gazu wewnątrz butli wypycha płyn na zewnątrz</template>
+        </category>
+
+        <category>
+            <pattern>Woda gazowana</pattern>
+            <template>woda pitna sztucznie nasycona dwutlenkiem węgla</template>
+        </category>
+
+        <category>
+            <pattern>Stewia</pattern>
+            <template>rodzaj z rodziny astrowatych obejmujący ok. 240 gatunków. Jest rozpowszechniona w uprawie i wykorzystywana jako źródło stewiozydów i do słodzenia potraw i napojów.</template>
+        </category>
+
+        <category>
+            <pattern>Aspartam</pattern>
+            <template>Stosowany jako sztuczny środek słodzący (słodzik) w produktach spożywczych, zwłaszcza takich, jak napoje niskokaloryczne, guma do żucia, drażetki odświeżające oddech.</template>
+        </category>
+
+        <category>
+            <pattern>Puszka aluminiowa</pattern>
+            <template>rodzaj opakowania, używanego w przemyśle spożywczym, głównie piwowarskim oraz napojów chłodzących do przechowywania napojów.</template>
+        </category>
+
+        <category>
+            <pattern>Red Bull</pattern>
+            <template>napój energetyzujący, produkowany przez firmę Red Bull GmbH. W skład napoju wchodzą m.in. tauryna, sacharoza, glukoza, kofeina, witaminy grupy B oraz inozytol. Nie jest napojem izotonicznym. 100 ml napoju zawiera 32 mg kofeiny.</template>
+        </category>
+
+        <category>
+            <pattern>Rockstar</pattern>
+            <template>to napój energetyczny stworzony w 2001 r. , który od 2020 r. ma 0,3% udziału w amerykańskim rynku napojów bezalkoholowych.  Rockstar ma siedzibę w Purchase w Nowym Jorku. Od stycznia 2013 roku Rockstar Energy Drink był dostępny w ponad 20 smakach i w ponad 30 krajach. W marcu 2020 roku PepsiCo ogłosiło, że zgodziło się na przejęcie Rockstara za 3,85 miliarda dolarów.</template>
+        </category>
+
+        <category>
+            <pattern>Monster Energy</pattern>
+            <template>napój energetyzujący produkowany przez Monster Beverage Corporation (dawniej firma nosiła nazwę Hansen Natural) od kwietnia 2002 roku. W Polsce sprzedaż napojów Monster Energy rozpoczęła się od lutego 2012.</template>
+        </category>
+
+        <category>
+            <pattern>Burn</pattern>
+            <template>bezalkoholowy napój energetyzujący produkowany przez koncern Monster Beverage. Krajem jego pochodzenia jest Szwecja. Napój jest dostępny na wszystkich zamieszkanych kontynentach, w większości krajów, w których koncern sprzedaje swoje produkty. Jego głównym konkurentem jest napój Red Bull.</template>
+        </category>
+
+        <category>
+            <pattern>Sanpellegrino</pattern>
+            <template>to włoska firma założona w 1899 roku z siedzibą w San Pellegrino Terme w prowincji Bergamo, która produkuje wodę mineralną i napoje gazowane S. Pellegrino. Obecnie z siedzibą w Mediolanie (jednostki produkcyjne nadal znajdują się w San Pellegrino Terme), kontroluje wiele innych marek w sektorze wody mineralnej (np. Levissima , Recoaro ) w imieniu Nestlé.</template>
+        </category>
+
+        <category>
+            <pattern>Hell</pattern>
+            <template>to popularna marka napoju energetycznego dystrybuowana głównie w Europie i Azji. Marka została zainicjowana w 2006 roku przez prywatną firmę, założoną na Węgrzech w 2004 roku, która przyjęła nazwę „Hell Energy Magyarország Kft”. w 2009 roku. W ciągu trzech lat stał się liderem rynku na Węgrzech.</template>
+        </category>
+
+        <category>
+            <pattern>Guarana Energy Drink</pattern>
+            <template>Guarana to najpopularniejszy napój energetyczny wśród młodych ludzi na rynku serbskim i czarnogórskim.</template>
+        </category>
+
+        <category>
+            <pattern>Tiger</pattern>
+            <template>marka bezalkoholowego napoju energetyzującego, na początku produkowanego przez przedsiębiorstwo Foodcare, a od grudnia 2010 – wyłącznie przez spółki z Grupy Maspex Wadowice. Marka jest własnością mistrza świata w boksie – Dariusza Michalczewskiego oraz jego fundacji „Równe Szanse”. Nazwa „Tiger” pochodzi od pseudonimu sportowego boksera.</template>
+        </category>
+
+        <category>
+            <pattern>Black</pattern>
+            <template>napój energetyzujący produkowany przez FoodCare. Napój pod nazwą Black Energy Drink został wprowadzony na rynek po tym, jak firma FoodCare utraciła prawa do produkcji, dystrybucji i promocji napoju energetyzującego Tiger. ichalczewski przekazał prawa do używania oznaczenia Tiger wadowickiej spółce M m.in. w Niemczech, Wielkiej Brytanii, w Czechach, w Słowacji, w Bułgarii i w Iranie. Od 2012 roku twarzą napoju jest były amerykański bokser Mike Tyson.</template>
+        </category>
+
+        <category>
+            <pattern>Milkis</pattern>
+            <template>to koreański napój bezalkoholowy produkowany przez Lotte Chilsung, południowokoreańską firmę produkującą napoje. Łączy w sobie wiele wspólnych elementów tradycyjnych napojów gazowanych, takich jak cukier i woda gazowana z mlekiem, aby stworzyć kremowy smak. jest dostępny w smakach pomarańczowym, truskawkowym, mango, melonowym, bananowym, brzoskwiniowym, jabłkowym i klasycznym.</template>
+        </category>
+
+        <category>
+            <pattern>Rubicon</pattern>
+            <template>Rubicon, to bardzo popularne napoje o egzotycznych smakach w Wielkiej Brytanii. Co ciekawe z sukcesem podbijają również rynki zagraniczne. Markę założyło dwóch byłych pracowników fabryki napojów. U jednego z założycieli w kuchni stworzyli pierwszy napój - nazywał się Passionade i był to gazowany napój o smaku marakui. Firma rozwinęła się bardzo szybko. Obecnie posiadają dużą fabrykę w Milton Keynes w Anglii a ich napoje są liderem na rynku napojów egzotycznych w Wielkiej Brytanii.</template>
+        </category>
+
+        <category>
+            <pattern>AriZona</pattern>
+            <template>Arizona Beverages USA to firma z USA, która powstała 1971 roku. Zajmowała się wtedy dystrybucją napojów, z dużym sukcesem dystrybuowała również piwa. W latach '90 po sucesach Snapple postanowili stworzyć własne napoje i tak w 1992 roku wprowadziła na rynek markę o nazwie Arizona. Są to mrożone herbaty o wielu smakach, napoje oraz energetyki. Ich cechą charakterystyczną są duże ponad półlitrowe puszki.</template>
+        </category>
+
+        <category>
+            <pattern>Frugo</pattern>
+            <template>marka napojów owocowych, stworzona przez firmę Alima Gerber, obecnie należąca do FoodCare. Frugo zasłynęło z oryginalnych reklam. Do dziś znany jest slogan marki "No to Frugo"</template>
+        </category>
+
+        <category>
+            <pattern>Semtex</pattern>
+            <template>to marka napoju energetycznego produkowanego w Czechach przez firmę Pinelli od 1995 roku i jako pierwszy taki napój wyprodukowany w kraju. Napój zyskał rozgłos po tym, jak wziął swoją nazwę od Semtexu, znanego tworzywa wybuchowego, również pochodzenia czechosłowackiego.</template>
+        </category>
+
+        <category>
+            <pattern>Napioje izotoniczne</pattern>
+            <template>to napoje mające na celu wyrównanie poziomu wody i elektrolitów wydalanych z organizmu w procesie wydzielania potu, a także uzupełnienie witamin i soli mineralnych oraz w niewielkim stopniu węglowodanów spalanych podczas wysiłku fizycznego.</template>
+        </category>
+
+        <category>
+            <pattern>Piwo korzenne</pattern>
+            <template>to słodki północnoamerykański napój bezalkoholowy, tradycyjnie wytwarzany przy użyciu kory korzeniowej drzewa sasafras Sassafras albidum lub winorośli Smilax ornata  jako głównego smaku. Piwo korzenne jest zazwyczaj (choć są odstępstwa od reguły) bezalkoholowe, bezkofeinowe, słodkie i gazowane. Podobnie jak tradycyjne piwo, zwykle ma gęstą i pieniącą się pianę. Częstą praktyką jest dodawanie piwa korzennego do lodów waniliowych.</template>
+        </category>
+
+        <category>
+            <pattern>Kombucha</pattern>
+            <template>napój uzyskiwany ze słodzonej herbaty poddanej fermentacji przez tzw. grzybek herbaciany, inaczej znany jako grzybek japoński lub SCOBY (z ang. Symbiotic Culture of Bacteria and Yeasts, czyli symbiotyczna kultura bakterii i drożdży). Napój jest lekko słodki, kwaskowaty, orzeźwiający i musujący. Posiada barwę od jasnoszarej do ciemnobrązowej.</template>
+        </category>
+
+        <category>
+            <pattern>Piwo imbirowe</pattern>
+            <template>to gazowany napój bezalkoholowy o smaku imbiru. Jest spożywany samodzielnie lub z napojami alkoholowymi (jako skłądnik drinków). Istnieją dwa główne rodzaje piwa imbirowego. Wynalezienie złotego stylu przypisuje się irlandzkiemu lekarzowi Thomasowi Josephowi Cantrellowi. Styl wytrawny (zwany także stylem bladym), bledszy napój o znacznie łagodniejszym smaku imbiru, został stworzony przez Kanadyjczyka Johna McLaughlina.</template>
+        </category>
+
+        <category>
+            <pattern>Irn-Bru</pattern>
+            <template>napój gazowany zawierający kofeinę, produkowany w Cumbernauld i Mansfield na licencji firmy Barr. Napój ten charakteryzuje się lekko cytrynowym smakiem, i znany jest z jasnopomarańczowego koloru. Receptura Irn–Bru jest dobrze strzeżoną tajemnicą, która znana jest tylko dwóm członkom zarządu firmy Barr, producenta napoju. Obecnie jest najbardziej popularnym napojem bezalkoholowym w Szkocji, bardziej tu nawet lubianym niż Coca Cola. Markę tę w 2005 roku promowała polska piosenkarka Doda.</template>
+        </category>
+
+        <category>
+            <pattern>Vinea</pattern>
+            <template>niealkoholowy napój gazowany, wykonany na bazie winogron, który po raz pierwszy został stworzony w Czechosłowacji w 1973 przez Słowaka Jána Farkaša, biochemika pracującego dla Bratysławskiego Instytutu Uprawy Winorośli i Tworzenia Wina. Produkcja napoju rozpoczęła się w 1974. Po latach kwestionowania własności marki, w styczniu 2008 roku Vinea została sprzedana producentowi Kofoli. Występuje w dwóch podstawowych wersjach smakowych: białej i czerwonej. Smak napoju przypomina wino musujące.</template>
+        </category>
+
+        
+
+        <category>
+            <pattern>Czym jest *</pattern>
+            <template><srai>Odpowiedz</srai><srai><star/></srai></template>
+        </category>
+        
+        <category>
+            <pattern>Kim jest *</pattern>
+            <template><srai>Odpowiedz</srai><srai><star/></srai></template>
+        </category>
+
+        <category>
+            <pattern>Lubię napoje gazowane</pattern>
+            <template>Jakie najbardziej?</template>
+        </category>
+        
+        <category>
+            <pattern>Lubię napoje gazowane</pattern>
+            <that>Dlaczego nie lubisz napojów gazowanych?</that>
+            <template>Weź się zdecyduj...</template>
+        </category>
+        
+        <category>
+            <pattern>Nie lubię napojów gazwaonych</pattern>
+            <template>Dlaczego nie lubisz napojów gazowanych?</template>
+        </category>
+
+        <category>
+            <pattern>Coca Cola ze słodzikiem smakuje tak sano dobrze jak ta z cukrem</pattern>
+                <template>
+                    Na pewno?
+                    <think><set name="topic">LOOP_1</set></think>
+                </template>
+        </category>
+
+
+
+        <topic name="LOOP_1">
+            <category>
+                <pattern>*</pattern>
+                <template>
+                <think><set name="var"><star /></set></think>
+                    <condition>
+                        <li name="var" value="Tak">
+                            Jestem innego zdania, ale nie będę się sprzeczał.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li name="var" value="Nie">
+                            Cyli musisz przyznać, że smak się różni.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li>Tak czy nie?</li>
+                    </condition>
+                </template>
+            </category>
+        </topic>
+        
+        <category>
+            <pattern>Coca Cola jest najlepszą colą</pattern>
+                <template>
+                    Na pewno?
+                    <think><set name="topic">LOOP_2</set></think>
+                </template>
+        </category>
+
+        <topic name="LOOP_2">
+            <category>
+                <pattern>*</pattern>
+                <template>
+                <think><set name="var"><star /></set></think>
+                    <condition>
+                        <li name="var" value="Tak">
+                            W zupełności się z Tobą zgadzam!
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li name="var" value="Nie">
+                            Jesteś niezdecydowany. Przemyśl to.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li>Tak czy nie?</li>
+                    </condition>
+                </template>
+            </category>
+        </topic>
+        
+        <category>
+            <pattern>Pepsi jest najlepszą colą</pattern>
+                <template>
+                    Jesteś o tym przekonany?
+                    <think><set name="topic">LOOP_3</set></think>
+                </template>
+        </category>
+
+        <topic name="LOOP_3">
+            <category>
+                <pattern>*</pattern>
+                <template>
+                <think><set name="var"><star /></set></think>
+                    <condition>
+                        <li name="var" value="Tak">
+                            Cóż, ja wolę Coca Colę.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li name="var" value="Nie">
+                            Również tak myślę. Uważam, że Coca Cola jest zdecydowanie lepsza w smaku.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li>Tak czy nie?</li>
+                    </condition>
+                </template>
+            </category>
+        </topic>
+        
+        <category>
+            <pattern>Fanta jest niesmaczna</pattern>
+                <template>
+                    Jesteś tego pewien?
+                    <think><set name="topic">LOOP_4</set></think>
+                </template>
+        </category>
+
+        <topic name="LOOP_4">
+            <category>
+                <pattern>*</pattern>
+                <template>
+                <think><set name="var"><star /></set></think>
+                    <condition>
+                        <li name="var" value="Tak">
+                            Myślę, że jeszcze za mało ich próbowałeś. Mają dużo wersji sakowych w ofercie, na pewno któraś Ci posmakuje!
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li name="var" value="Nie">
+                            Czyli jednak przemyślałeś sprawę.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li>Tak czy nie?</li>
+                    </condition>
+                </template>
+            </category>
+        </topic>
+
+        <category>
+            <pattern>Sprite ogórkowy jest okropny</pattern>
+                <template>
+                    Jesteś tego pewien?
+                    <think><set name="topic">LOOP_5</set></think>
+                </template>
+        </category>
+
+        <topic name="LOOP_5">
+            <category>
+                <pattern>*</pattern>
+                <template>
+                <think><set name="var"><star /></set></think>
+                    <condition>
+                        <li name="var" value="Tak">
+                            Tak, też myślę, że to najgrosza z wersji napoju, jakie wypuścili do sprzedaży.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li name="var" value="Nie">
+                            Masz specyficzny gust smakowy.
+                            <think><set name="topic">NAPOJE</set></think>
+                        </li>
+                        <li>Tak czy nie?</li>
+                    </condition>
+                </template>
+            </category>
+        </topic>
+        
+
+
+        <category>
+            <pattern>Myślę, że *</pattern>
+            <template>Czym to argumentujesz</template>
+        </category>
+
+        <category>
+            <pattern>Uważam, że *</pattern>
+            <template>Czym to argumentujesz</template>
+        </category>
+
+        <category>
+            <pattern>Według mnie *</pattern>
+            <template>Czym to argumentujesz</template>
+        </category>
+        
+        <category>
+            <pattern>*</pattern>
+            <that>Czym to argumentujesz</that>
+            <template>
+                Nie jestem przekonany w pełni, aby <set name="to"><star/></set> było w pełni jasne. Czy jesteś przekonany, że '<get name="to"/>' wystarczy, aby potwierdzić Twoją tezę?
+            </template>
+        </category>
+            
+        
+
+        <category>
+            <pattern>bot</pattern>
+            <template>Myślisz, że jednak jestem tylko botem? :(</template>
+        </category>
+        
+        <category>
+            <pattern>_ bot</pattern>
+            <template><srai>bot</srai></template>
+        </category>
+        
+        <category>
+            <pattern>bot _</pattern>
+            <template><srai>bot</srai></template>
+        </category>
+        
+        <category>
+            <pattern>_ bot *</pattern>
+            <template><srai>bot</srai></template>
+        </category>
+
+
+        
+        <category>
+            <pattern>puszka</pattern>
+            <template>Wolisz napoje w puszkach?</template>
+        </category>
+        
+        <category>
+            <pattern>_ puszka</pattern>
+            <template><srai>puszka</srai></template>
+        </category>
+        
+        <category>
+            <pattern>puszka _</pattern>
+            <template><srai>pilot</srai></template>
+        </category>
+        
+        <category>
+            <pattern>_ puszka *</pattern>
+            <template><srai>puszka</srai></template>
+        </category>
+
     </topic>
-<category>
-<pattern>Zwierzeta *</pattern>
-<template>Zwierzeta to istoty zywe</template>
-</category>
-<category>
-<pattern>Interesujesz sie zwierzetami</pattern>
-<template><think><set name="topic">ZWIERZAKI</set></think>Owszem, chetnie o nich porozmawiam</template>
-</category>
+    
 
-  
+
+    <category>
+        <pattern>Napoje gazowane *</pattern>
+        <template>Napoje gazowane są bardzo orzeźwiające!</template>
+    </category>
 </aiml>
